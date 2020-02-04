@@ -54,6 +54,12 @@ If you're using Bundler, add the gem to Gemfile.
 
 Then run bundle install.
 
+## Updating Certificate Chain
+
+```
+openssl s_client -servername api.yubico.com -showcerts -connect api.yubico.com:443 </dev/null > lib/cert/chain.pem
+```
+
 ## Copyright
 
 ### Ruby library
